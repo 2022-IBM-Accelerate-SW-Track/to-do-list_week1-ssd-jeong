@@ -41,12 +41,12 @@ class AddTodo extends Component {
         <TextField
           label="Add New Item"
           variant="outlined"
-          onChange={ this.handleChange()}
+          onChange={this.handleChange()}
           value={this.setState()}
         />
         <Button
           style={{ marginLeft: "10px" }}
-          onClick={ this.handleSubmit()}
+          onClick={this.handleSubmit()}
           variant="contained"
           color="primary"
         >
