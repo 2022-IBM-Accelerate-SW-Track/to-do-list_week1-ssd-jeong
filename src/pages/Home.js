@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Navbar } from 'react-bootstrap';
 import AddTodo from '../component/AddTodo';
 import Todos from '../component/todos';
 import NavbarComp from '../component/navigation/NavbarComp';
@@ -33,10 +32,9 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <NavbarComp/>
         <h1>Todo's </h1>
-        <Todos todos={this.todos}/>
-        <AddTodo addTodo={this.addTodo()}/>
+        <AddTodo addTodo={this.addTodo}/>
+        <Todos todos={this.state.todos}/>
       </div>
     );
   }
